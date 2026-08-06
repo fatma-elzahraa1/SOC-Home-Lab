@@ -1,6 +1,14 @@
 # Splunk SPL Queries
 
-## 1. Total Events
+## Search All Events
+
+```spl
+index=main
+```
+
+---
+
+## Count Total Events
 
 ```spl
 index=main
@@ -9,7 +17,16 @@ index=main
 
 ---
 
-## 2. Event Code Distribution
+## Events by Source
+
+```spl
+index=main
+| stats count by source
+```
+
+---
+
+## Events by EventCode
 
 ```spl
 index=main
@@ -18,29 +35,58 @@ index=main
 
 ---
 
-## 3. Top Users
+## Top Users
 
 ```spl
 index=main
 | stats count by User
-| sort -count
 ```
 
 ---
 
-## 4. Recent Process Creation Events
+## Recent Process Creation Events
 
 ```spl
 index=main EventCode=1
-| table _time Image User CommandLine ParentImage
+| table _time Computer User Image CommandLine ParentImage
 ```
 
 ---
 
-## 5. Top Process Names
+## Search PowerShell Events
 
 ```spl
-index=main EventCode=1
-| stats count by Image
-| sort -count
+index=main powershell
+```
+
+---
+
+## Search CMD Events
+
+```spl
+index=main cmd.exe
+```
+
+---
+
+## Search Network Connections
+
+```spl
+index=main EventCode=3
+```
+
+---
+
+## Search Failed Logons
+
+```spl
+index=main EventCode=4625
+```
+
+---
+
+## Search Successful Logons
+
+```spl
+index=main EventCode=4624
 ```
