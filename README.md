@@ -74,7 +74,7 @@ README.md
 
 ### Top Event IDs
 
-![Top Event IDs](Screenshots/top-event.png.jpeg)
+![Top Event Code](Screenshots/top-event.png.jpeg)
 
 ### Recent Process Creation
 
