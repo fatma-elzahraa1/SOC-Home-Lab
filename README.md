@@ -30,9 +30,9 @@ The project includes:
 The dashboard contains:
 
 - Total Events
-- Event ID Distribution
+- Event Code Distribution
 - Top Users
-- Top Event IDs
+- Top Event Code
 - Recent Process Creation Events
 
 ---
