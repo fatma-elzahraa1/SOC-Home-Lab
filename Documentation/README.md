@@ -1,45 +1,76 @@
-# SOC Home Lab - Splunk SIEM
+# SOC Home Lab – Splunk SIEM
 
-## Project Overview
+# Project Overview
 
-This project demonstrates a basic Security Operations Center (SOC) monitoring environment using Splunk Enterprise.
+This project demonstrates a Security Operations Center (SOC) Home Lab built using Splunk Enterprise.
 
-## Objectives
+The lab collects Windows Event Logs and Sysmon telemetry, forwards logs using Splunk Universal Forwarder, and analyzes security events through dashboards and SPL searches.
 
+---
+
+# Objectives
+
+- Configure Splunk Enterprise
+- Install Splunk Universal Forwarder
 - Collect Windows Event Logs
-- Forward logs using Splunk Universal Forwarder
-- Analyze Sysmon events
-- Create SPL searches
-- Build SOC monitoring dashboards
-- Investigate Windows security events
+- Monitor Sysmon Events
+- Create SOC Dashboards
+- Perform Log Analysis
+- Write SPL Queries
+- Build Detection Use Cases
 
-## Tools Used
+---
 
-- Splunk Enterprise
-- Splunk Universal Forwarder
-- Sysmon
-- Windows 10
-- PowerShell
+# Environment
 
-## Data Sources
+| Component | Version |
+|----------|---------|
+| Operating System | Windows 10 |
+| SIEM | Splunk Enterprise |
+| Log Forwarding | Splunk Universal Forwarder |
+| Endpoint Monitoring | Sysmon |
+| Shell | PowerShell |
 
-- Windows Event Logs
+---
+
+# Data Sources
+
+- Windows Security Logs
+- Windows System Logs
+- Windows Application Logs
 - Microsoft-Windows-Sysmon/Operational
 
-## Dashboard
+---
 
-The dashboard includes:
+# Dashboard Panels
+
+The dashboard contains:
 
 - Total Events
-- Event ID Distribution
+- EventCode Distribution
 - Top Users
-- Top Event IDs
+- Top Event Codes
 - Recent Process Creation Events
 
-## Skills Demonstrated
+---
 
+# Documentation
+
+This repository contains:
+
+- Detection Use Cases
+- SPL Queries
+- Dashboard Screenshots
+- Project Documentation
+
+---
+
+# Skills Demonstrated
+
+- Security Monitoring
 - Log Analysis
+- Windows Event Investigation
 - SPL Query Writing
 - Dashboard Creation
-- Windows Event Investigation
-- SOC Monitoring
+- Threat Detection
+- SOC Operations
