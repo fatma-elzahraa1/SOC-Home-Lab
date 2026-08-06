@@ -1,80 +1,84 @@
 # Detection Use Cases
 
-## 1. Process Creation Monitoring
+## Use Case 1 — Process Creation Monitoring
 
-**Objective**
+### Objective
 
-Detect newly created processes on Windows endpoints.
+Detect newly created processes using Sysmon EventCode 1.
 
-**Event Code**
-
-Sysmon Event Code 1
-
-**SPL Query**
+### SPL Query
 
 ```spl
 index=main EventCode=1
-| table _time Image User CommandLine ParentImage
+| table _time Computer User Image CommandLine ParentImage
 ```
 
 ---
 
-## 2. User Activity Monitoring
+## Use Case 2 — Failed Login Detection
 
-**Objective**
+### Objective
 
-Identify the most active users on the endpoint.
+Detect failed Windows logon attempts.
 
-**SPL Query**
+### SPL Query
 
 ```spl
-index=main
-| stats count by User
-| sort -count
+index=main EventCode=4625
 ```
 
 ---
 
-## 3. Event Volume Monitoring
+## Use Case 3 — Successful Login Monitoring
 
-**Objective**
+### Objective
 
-Monitor total log volume received by Splunk.
+Monitor successful user logins.
 
-**SPL Query**
+### SPL Query
 
 ```spl
-index=main
-| stats count
+index=main EventCode=4624
 ```
 
 ---
 
-## 4. Event Code Distribution
+## Use Case 4 — Network Connection Monitoring
 
-**Objective**
+### Objective
 
-Identify the most common Windows events.
+Monitor outbound network connections using Sysmon.
 
-**SPL Query**
+### SPL Query
 
 ```spl
-index=main
-| stats count by EventCode
+index=main EventCode=3
 ```
 
 ---
 
-## 5. Top Executed Processes
+## Use Case 5 — PowerShell Activity
 
-**Objective**
+### Objective
 
-Identify frequently executed applications.
+Detect PowerShell execution for possible malicious activity.
 
-**SPL Query**
+### SPL Query
 
 ```spl
-index=main EventCode=1
-| stats count by Image
-| sort -count
+index=main powershell
+```
+
+---
+
+## Use Case 6 — Command Prompt Execution
+
+### Objective
+
+Detect execution of cmd.exe.
+
+### SPL Query
+
+```spl
+index=main cmd.exe
 ```
