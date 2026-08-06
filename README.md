@@ -60,8 +60,25 @@ README.md
 
 ## Screenshots
 
-Project screenshots are available inside the Screenshots folder.
+### SOC Dashboard
 
+![Dashboard](Screenshots/dashboard.jpeg)
+
+### Total Events
+
+![Total Events](Screenshots/total-events.png.jpeg)
+
+### Top Users
+
+![Top Users](Screenshots/top-users.png.jpeg)
+
+### Top Event IDs
+
+![Top Event IDs](Screenshots/top-event.png.jpeg)
+
+### Recent Process Creation
+
+![Process Creation](Screenshots/process-creation.png.jpeg)
 ---
 
 ## Author
