@@ -131,28 +131,30 @@ A dedicated dashboard was built to visualize the detection:
 ### Screenshots
 
 **Simulated Attack (runas command)**
-![Runas Simulation](Screenshots/runas-command-simulation.png)
+![Runas Simulation](Screenshots/Phase2-BruteForce-Detection/runas-command-simulation.png)
 
 **Event ID 4625 Detail**
-![Event ID 4625](Screenshots/Event%20ID%204625%20Details.png)
+![Event ID 4625](Screenshots/Phase2-BruteForce-Detection/Event%20ID%204625%20Details.png)
 
 **Failed Logins by Username**
-![Failed Logins by Username](Screenshots/Failed%20Login%20Attempts%20by%20Username.png)
+![Failed Logins by Username](Screenshots/Phase2-BruteForce-Detection/Failed%20Logins%20by%20Username.png)
 
 **Failed Logins by Source IP**
-![Failed Logins by Source IP](Screenshots/Failed%20Logins%20by%20Source%20IP.png)
+![Failed Logins by Source IP](Screenshots/Phase2-BruteForce-Detection/Failed%20Logins%20by%20Source%20IP.png)
 
 **Alert Configuration**
-![Alert Created](Screenshots/alert-created-details.png)
+![Alert Created](Screenshots/Phase2-BruteForce-Detection/alert-created-details.png)
 
 **Alert Enabled**
-![Alert Enabled](Screenshots/alert-created-enabled.png)
+![Alert Enabled](Screenshots/Phase2-BruteForce-Detection/alert-created-enabled.png)
 
 **Alert Trigger History (Proof it fired)**
-![Alert Trigger History](Screenshots/alert-trigger-history.png)
+![Alert Trigger History](Screenshots/Phase2-BruteForce-Detection/alert-trigger-history.png)
 
 **Final Detection Dashboard**
-![Detection Dashboard](Screenshots/dashboard-final.png)
+![Detection Dashboard](Screenshots/Phase2-BruteForce-Detection/dashboard-final.png)
+
+---
 
 ---
 
